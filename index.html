@@ -1,0 +1,333 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Decoration</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Montserrat -->
+    <link rel="stylesheet" href="https://use.typekit.net/hxv4hdi.css">
+    <!-- Open Sans -->
+    <link rel="stylesheet" href="https://use.typekit.net/hxv4hdi.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navBar">
+        <div class="nav-container">
+            <label onclick="collapse()" for="hamburger" class="hamburger"><i class="hmb-icon bi bi-list"></i></label>
+            <div class="menuBar" id="collapse-nav">
+                <a href="#header" class="nav-item nav-item-active">Home</a>
+                <a href="#gallery" class="nav-item">Gallery</a>
+                <a href="#product" class="nav-item">Products</a>
+                <a href="#blog" class="nav-item">Blog</a>
+                <a href="#quotes" class="nav-item">Quotes</a>
+                <a href="#email" class="nav-item">Contact Us</a>
+            </div>
+            <div class="logo_container">
+                <div class="logo-back"></div>
+                <a href="#">
+                    <img src="Logo/Group 5.png" alt="Logo" class="logo-img">
+                </a>
+            </div>
+            <div class="icons_container">
+                <a href="#"><i class="header-icon bi bi-instagram"></i></a>
+                <a href="#"><i class="header-icon bi bi-app"></i></a>
+                <a href="#"><i class="header-icon bi bi-app-indicator"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- end Navbar -->
+    <!-- header Section -->
+    <header class="header" id="header">
+
+        <!-- slider -->
+        <div class="slider-dots">
+            <span onclick="currentSlide(1)" class="header-dot dot1"></span>
+            <span onclick="currentSlide(2)" class="header-dot dot2"></span>
+            <span onclick="currentSlide(3)" class="header-dot dot3"></span>
+        </div>
+        <div class="header-slides slide1">
+        </div>
+        <div class="header-slides slide2">
+        </div>
+        <div class="header-slides slide3">
+        </div>
+        <!-- end Slider -->
+        <!-- header Content -->
+        <div class="header-content">
+            <h2 class="header-title">Title Text</h2>
+            <p class="header-txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi nihil deleniti
+                reiciendis beatae, sint
+                dolore?</p>
+        </div>
+        <!-- end Header Content -->
+    </header>
+    <!-- end Header Section -->
+    <!-- gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="gallery-container">
+            <div class="gallery-list" data-aos="fade-right">
+                <div class="gl-img" onclick="currentGslide(1)">
+                    <img class="list-img lsit-img1" src="img/gallery 2.jpg" alt="gallery-list">
+                </div>
+                <div class="gl-img" onclick="currentGslide(2)">
+                    <img class="list-img" src="img/gallery 3.jpg" alt="gallery-list">
+                </div>
+                <div class="gl-img" onclick="currentGslide(3)">
+                    <img class="list-img" src="img/gallery 4.jpg" alt="gallery-list">
+                </div>
+                <div class="gl-img" onclick="currentGslide(4)">
+                    <img class="list-img" src="img/gallery 5.jpg" alt="gallery-list">
+                </div>
+                <div class="gl-img" onclick="currentGslide(5)">
+                    <img class="list-img" src="img/gallery 6.jpg" alt="gallery-list">
+                </div>
+            </div>
+            <div class="gallery-img" data-aos="fade-left">
+                <div class="gallery-slides glrSliActive">
+                    <img class="glry-img" src="img/gallery 2.jpg" alt="gallery-list">
+                </div>
+                <div class="gallery-slides">
+                    <img class="glry-img" src="img/gallery 3.jpg" alt="gallery-list">
+                </div>
+                <div class="gallery-slides">
+                    <img class="glry-img" src="img/gallery 4.jpg" alt="gallery-list">
+                </div>
+                <div class="gallery-slides">
+                    <img class="glry-img" src="img/gallery 5.jpg" alt="gallery-list">
+                </div>
+                <div class="gallery-slides">
+                    <img class="glry-img" src="img/gallery 6.jpg" alt="gallery-list">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Gallery Section -->
+    <!-- product Section -->
+    <section class="products" data-aos="fade-up" id="product">
+        <h3 class="product-title">See our products</h3>
+        <h4 class="product-text">Find what you comfort!</h4>
+        <div class="product-container">
+            <!-- single Card -->
+            <div class="pro-card">
+                <div class="pro-card-img-container"><img src="img/sell/andreas-haslinger-6z5-rSVTSm4-unsplash.jpg" alt="" class="fpro-card-img"></div>
+                <div class="pro-card-container">
+                    <div class="pro-first-col">
+                        <p class="first-pro-ex">Lorem Ipsum is simply dumm</p>
+                        <p class="first-pro-ex2">hello there</p>
+                    </div>
+                    <div class="pro-second-col">
+                        <p class="first-pro-price">198$</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end Single Card -->
+            <!-- single Card -->
+            <div class="pro-card">
+                <div class="pro-card-img-container"><img src="img/sell/arno-smit-Knynaa97O0M-unsplash.jpg" alt="" class="spro-card-img"></div>
+                <div class="pro-card-container">
+                    <div class="pro-first-col">
+                        <p class="second-pro-ex">Lorem Ipsum is simply dumm</p>
+                        <p class="second-pro-ex2">hello there</p>
+                    </div>
+                    <div class="pro-second-col">
+                        <p class="second-pro-price">198$</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end Single Card -->
+            <!-- single Card -->
+            <div class="pro-card">
+                <div class="pro-card-img-container"><img src="img/sell/collov-home-design--5HHAP5UWFM-unsplash.jpg" alt="" class="tpro-card-img"></div>
+                <div class="pro-card-container">
+                    <div class="pro-first-col">
+                        <p class="third-pro-ex">Lorem Ipsum is simply dumm</p>
+                        <p class="third-pro-ex2">hello there</p>
+                    </div>
+                    <div class="pro-second-col">
+                        <p class="third-pro-price">198$</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end Single Card -->
+        </div>
+        <div onclick="changePro(-1)" class="slide-changer"><img src="img/Group 100.png" alt="arrow" class="pro-arrow"></div>
+        <div onclick="changePro(1)" class="slide-changer1"><img src="img/Group 100.png" alt="arrow" class="pro-arrow1"></div>
+        <div class="pro-dots">
+            <span class="pro-dot active-pro-dot"></span>
+            <span class="pro-dot"></span>
+            <span class="pro-dot"></span>
+        </div>
+    </section>
+    <!-- end Product Section -->
+    <hr class="hr-brfore-blog">
+    <!-- blog Section -->
+    <section class="blog-section" id="blog" data-aos="fade-down">
+        <div class="blog-container">
+            <div class="blog blog0">
+                <div class="blog-img bl-img1" data-aos="fade-right">
+                </div>
+                <div class="blog-text-container" data-aos="fade-left">
+                    <h3 class="blog-h3">Base Cabinets for Countertop Support Base cabinets are types of kitchen
+                        cabinets that present the base for countertops.</h3>
+                    <p class="blog-text">
+                        They are the most important because they support
+                        one of the most important and one of the heaviest items in any kitchen. Therefore, they need to
+                        be strong, sturdy, and well-balanced. Standard size base cabinets are 36 inches tall and 24
+                        inches deep. Depending on the manufacturer, you can increase the base cabinets depth up to 27
+                        inches. We strongly encourage you to consider increasing their depth because that is one of the
+                        best ways to get more storage space. Base cabinets rest atop a four-inch recessed riser – toe
+                        kick.</p>
+                </div>
+            </div>
+            <div class="blog blog1">
+                <div class="blog-img bl-img2" data-aos="fade-right">
+                </div>
+                <div class="blog-text-container" data-aos="fade-left">
+                    <h3 class="blog-h3">Wall Cabinets for Beautiful Design Wall cabinets, upper cabinets, or
+                        wall-mounted kitchen cabinets. These cabinets have different names but are the same. They
+                        contrast base cabinets and position above them.</h3>
+                    <p class="blog-text"> While base cabinets are important because they
+                        support countertops and give you a lot of storage options, wall cabinets are the most important
+                        for remodeling processes. Upper or wall cabinets are most visible and carry the most of the
+                        looks and functionality of any kitchen. At the same time, wall cabinets also provide much-needed
+                        storage space.</p>
+                </div>
+            </div>
+            <div class="blog blog2">
+                <div class="blog-img bl-img3" data-aos="fade-right">
+                </div>
+                <div class="blog-text-container" data-aos="fade-left">
+                    <h3 class="blog-h3">Pantry (Tall) Cabinets for More Storage Pantry cabinets or Tall Cabinets. You
+                        can call them one or the other but the names mean the same.</h3>
+                    <p class="blog-text"> Pantry or Tall Cabinets feature full
+                        height.They start from the floor and extend to the ceiling. The height of pantry cabinets
+                        guarantees the maximum of storage usage. Pantry or Tall cabinets usually range in height from 84
+                        to 96 inches per unit. They give the kitchen a dramatically vertical look and can serve as a
+                        broom storage because of their size.</p>
+                </div>
+            </div>
+            <div class="blog-menu" data-aos="fade-up">
+                <div class="blog-m-item blog-m-item-avtive">
+                    <p onclick="blog(1)">menu 1</p>
+                </div>
+                <div class="blog-m-item">
+                    <p onclick="blog(2)">menu 2</p>
+                </div>
+                <div class="blog-m-item">
+                    <p onclick="blog(3)">menu 3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Blog Section -->
+    <!-- quotes Section -->
+    <section class="quotes" id="quotes" data-aos="fade-up">
+        <div class="quotes-container">
+            <div class="quotes-title">
+                <p class="quotes-text">What they say about us!</p>
+            </div>
+            <div class="quotes-items">
+                <!-- single Quote -->
+                <div class="quote">
+                    <div class="quote-photo q1"></div>
+                    <div class="quote-person qp1"></div>
+                    <div class="quote-txt">
+                        <p class="quote-comment qc1">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, quidem."</p>
+                    </div>
+                </div>
+                <!-- end Single Quote -->
+                <!-- single Quote -->
+                <div class="quote">
+                    <div class="quote-photo q2"></div>
+                    <div class="quote-person qp2"></div>
+                    <div class="quote-txt">
+                        <p class="quote-comment qc2">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, quidem."</p>
+                    </div>
+                </div>
+                <!-- end Single Quote -->
+                <!-- single Quote -->
+                <div class="quote">
+                    <div class="quote-photo q3"></div>
+                    <div class="quote-person qp3"></div>
+                    <div class="quote-txt">
+                        <p class="quote-comment qc3">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, quidem."</p>
+                    </div>
+                </div>
+                <!-- end Single Quote -->
+            </div>
+        </div>
+    </section>
+    <!-- end Quotes Section -->
+    <!-- email Section -->
+    <section class="email" id="email">
+        <div class="email-container">
+            <div class="email-txt">
+                <p>KEEP UPDATED</p>
+                <p>NEWSLETTER</p>
+                <p>Enter your email to stay in the loop on new collections, pop-up shows and more.</p>
+            </div>
+            <div class="email-field">
+                <form action="">
+                    <input class="email-input" placeholder="Enter your email here!" type="email">
+                    <button class="submit-button" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- end Email Section -->
+    <!-- footer Section -->
+    <section class="footer">
+        <div class="footer-container">
+            <div class="f-logo-container">
+                <img src="Logo/Group 5.png" alt="Logo" class="f-logo-img">
+                <div class="f-icons">
+                    <a href="#"><i class="footer-icon bi bi-instagram"></i></a>
+                    <a href="#"><i class="footer-icon bi bi-app"></i></a>
+                    <a href="#"><i class="footer-icon bi bi-app-indicator"></i></a></div>
+            </div>
+            <div class="f-sub-menu">
+                <a href="#header" class="footer-menu">
+                    <p class="footer-item-menu">HOME PAGE</p>
+                </a>
+                <a href="#gallery" class="footer-menu">
+                    <p class="footer-item-menu">GALLERY</p>
+                </a>
+                <a href="#product" class="footer-menu">
+                    <p class="footer-item-menu">PRODUCTS</p>
+                </a>
+                <a href="#blog" class="footer-menu">
+                    <p class="footer-item-menu">BLOG</p>
+                </a>
+                <a href="#quotes" class="footer-menu">
+                    <p class="footer-item-menu">QUOTES</p>
+                </a>
+                <a href="#email" class="footer-menu">
+                    <p class="footer-item-menu">CONTACT US</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- end Footer Section -->
+    <!--______________________________________________________________________________________________________-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+        integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 0,
+            duration: 1000
+        });
+    </script>
+</body>
+<script src="all.js"></script>
+
+</html>
